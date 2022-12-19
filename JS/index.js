@@ -163,30 +163,35 @@ let productos = [{
 
 // 2) Utilizar un método de array que verifique si oferta es true, en el caso de que lo sea,
 // haga un 15%, 5%, 20%, 10% de descuento (elijan el descuento que quieran).
+
 let copiaProductos = productos.slice()
 
-copiaProductos.forEach ( (element ) =>{
-    if (element.oferta === true && element.categoria === "A")
-    console.log ("Con el 10%, el producto tiene un descuento de: $"+element.precio*10/100)
-    if (element.oferta === true && element.categoria === "B")
-    console.log ("Con el 5%, el producto tiene un descuento de: $"+element.precio*5/100)
-})
-
+function methodForEach(){
+    copiaProductos.forEach ( (element ) =>{
+        if (element.oferta === true && element.categoria === "A")
+        console.log ("Con el 10%, el producto tiene un descuento de: $"+element.precio*10/100)
+        if (element.oferta === true && element.categoria === "B")
+        console.log ("Con el 5%, el producto tiene un descuento de: $"+element.precio*5/100)
+    })
+}
+methodForEach()
 // 3) Utilizando un método de array, que ordene a los elementos de manera alfabética (a - z o z - a), 
 //como ustedes prefieran. También pueden ordenar por número de id (ascendente o descendente).
 
-
-copiaProductos.sort ((a,b)=>{
-    if (a.producto < b.producto){
-        return -1
-    }else if (a.producto > b.producto){
-        return 1
-    } else {
-        return 0
-    }
-})
-
-console.log(copiaProductos)
+function methodSort (){
+    copiaProductos.sort ((a,b)=>{
+        if (a.producto < b.producto){
+            return -1
+        }else if (a.producto > b.producto){
+            return 1
+        } else {
+            return 0
+        }
+    })
+    
+    console.log(copiaProductos)
+}
+methodSort()
 // Usen este método haciendo una copia segura del array. 
 //Pueden copiar el array de manera segura con los siguientes métodos:
 
@@ -201,24 +206,31 @@ console.log(copiaProductos)
 //En el caso de que si, entonces con filter, filtre el array y que 
 //muestre en consola cada una de las ofertas.
 
-let ofertas = confirm ("Desea ver las ofertas de la tienda?") 
+function ofertasDelDia (){
+    let ofertas = confirm ("Desea ver las ofertas de la tienda?") 
     if (ofertas === true){
         copiaProductos.filter ((objetoOferta)=>{
-            if (objetoOferta.oferta === true && objetoOferta.categoria === "A"){
+            if (/*objetoOferta.oferta === true &&*/ objetoOferta.categoria === "A"){
                 console.log (`${objetoOferta.producto} tiene descuento del 10%`)
             }
-            if (objetoOferta.oferta === true && objetoOferta.categoria === "B"){
+            if (/*objetoOferta.oferta === true &&*/ objetoOferta.categoria === "B"){
                 console.log (`${objetoOferta.producto} tiene descuento del 5%`)
             }
         }) 
     }
+}
 
+ofertasDelDia ()
 // 5) A través de un prompt, permita al usuario buscar productos. 
 //Una vez que ingrese un producto, busquen con find dicho producto y muestrelo en un alert().
 
-let busqueda = prompt(`Buscar producto`)
+function buscarProducto(){
+    let busqueda = prompt(`Buscar producto`)
     copiaProductos.find((buscar)=>{
         if (buscar.producto === busqueda){
             alert(`${buscar.producto}`)
         }
     })
+}
+
+buscarProducto()
