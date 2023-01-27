@@ -67,7 +67,3 @@ anadirAlCarrito()
 
 const carritoActual = JSON.parse(localStorage.getItem("carrito")) || []
 carrito = carritoActual
-
-
-
-
