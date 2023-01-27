@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <a href="./pages/carrito.html">Ir al carrito</a>
-    <main>
-        <div class="container-cards">
-        </div>
-    </main>
+    <div class="container-global">
+        <header>
+            <nav class="navBar">
+                <h1>Impermeabilizaciones M&D </h1>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./pages/carrito.html">Carrito</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/usuarios.html">Mi cuenta</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/image/impermeabilizacion.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/Impermeabilizaciones.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/imp1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/imp2.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/imp3.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/imp4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/imp5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/imp6.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/image/imp7.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <h3>Contacto</h3>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Correo electrónico: info@mitiendaenlinea.com</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/productos.js"></script>
+    <script src="./js/pruebras.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
