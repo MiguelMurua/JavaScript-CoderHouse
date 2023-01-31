@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
@@ -21,9 +22,30 @@
             </ul>
         </nav>
     </header>
+    <div class="containerUser">
+        <main>
+
+            <form action="">
+                <h2 class="title">Login</h2>
+                <label for="">
+                    <i class="fa-solid fa-user"></i>
+                    <input placeholder="usuario" type="text" id="usuario">
+                </label>
+                
+                <label for="">
+                    <i class="fa-solid fa-lock"></i>
+                    <input placeholder="contraseña" type="password" id="password">
+                </label>
+                <a href="../pages/registro.html" class="link">Crear cuenta</a>
+                <a href="../pages/recuperaracc.html" class="link">Recuperar contraseña</a>
+                
+                <button id="button">Login</button>
+            </form>
     
-    
-    
+        </main>
+        
+    </div>
+
     <footer>
         <h3>Contacto</h3>
         <p>Teléfono: 555-555-5555</p>
@@ -35,5 +57,6 @@
         </div>
     </footer>
 
+    <script src="../js/registro.js"></script>
 </body>
 </html>

@@ -97,7 +97,7 @@ let productos = [
         precio: 8800,
         pesoMin: "",
         pesoMax:"25kg",
-        descripcion:"IMPERMEABILIZANTE CEMENTICIO DE ALTA PERFORMANCE",
+        descripcion:"Impermeabilizante cementicio de alta perfomance",
         caracteristicas: "Sika MonoTop®-107 Seal es un mortero cementício modificado con polímeros, impermeabilizante y monocomponente. Tolera presión de agua positiva y negativa.",
         marca:"",
         categoria:"A",
