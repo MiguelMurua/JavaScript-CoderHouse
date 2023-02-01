@@ -1,19 +1,34 @@
 
+const nombre = document.getElementById("user-name")
+const email = document.getElementById("user-correo")
+const direccion = document.getElementById("user-direccion")
+const form = document.getElementById("form-contact")
+const mensaje = document.getElementById("mensaje")
 
-const email = document.querySelector("#correo");
 
-const tomamosEmail = email.value;
+const validarForm = ()=>{
 
-function validarCorreo (){
-
-    for (let i=0; i<tomamosEmail.length; i++){
-        if ( tomamosEmail[i].length === "@"){
-            console.log(tomamosEmail[i])
+    form.addEventListener("submit", e=>{
+        e.preventDefault()
+        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+        if( nombre.value === "" ){
+            alert("no ah ingresado ningun nombre")
         }
-        else{
-            console.log("tomamosEmail")
+        else if( nombre.value.length <6 ){
+            alert("Nombre demasiado corto")
         }
-    }
-    
+        
+        if( regexEmail.test(email.value) === true){
+            
+        }
+        else if ( regexEmail.test(email.value) === false){
+            alert("el email ingresado no es valido")
+        }
+
+        form.reset()
+    })
+
 }
-validarCorreo()
+
+validarForm()
+
