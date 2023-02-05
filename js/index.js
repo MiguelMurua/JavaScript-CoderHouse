@@ -19,7 +19,7 @@ const cardsHtml = (array) => {
                     ${element.descripcion}
                 </h3>
                 <br>
-                <h3>
+                <h3 class="h3-precios">
                     ${"Precio: $" + element.precio}
                 </h3>
                 <br>

@@ -22,7 +22,11 @@ const validarForm = ()=>{
             
         }
         else if ( regexEmail.test(email.value) === false){
-            alert("el email ingresado no es valido")
+            swal({
+                title: "No ha ingresado un Email",
+                icon: "error",
+                button: "Ok",
+            });
         }
 
         form.reset()
