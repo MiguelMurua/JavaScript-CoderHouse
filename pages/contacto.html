@@ -22,6 +22,42 @@
         </nav>
     </header>
 
+    <main>
+
+        <div class="container-contact">
+            <form class="form-contact" action="" method="POST" id="form-contact">
+                <h2 class="title">Formulario de Contacto</h2>
+                <label class="label-contact" for="username">
+                    <em>Nombre y Apellido:*</em>
+                    <input type="text" id="user-name" name="nombre">
+                    <span></span>
+                </label>
+                
+                <label class="label-contact" for="email">
+                    <em>Correo electrónico:*</em>
+                    <input type="email" id="user-correo" name="email">
+                    <span></span>
+                </label>
+                
+                <label class="label-contact" for="username">
+                    <em>Dirección:*</em>
+                    <input type="text" id="user-direccion" name="direccion">
+                    <span></span>
+                </label>
+                
+                <label for="mensaje" class="label-mensaje" >
+                    <em>Mensaje:*</em>
+                    <textarea  class="text-area" name="mensaje" id="mensaje" cols="74" rows="10"></textarea>
+                    <span></span>
+                </label>
+                
+                <input class="input-registro" type="submit" value="Enviar" id="button-contact">
+            </form>
+        </div>
+
+    </main>
+
+
     <footer>
         <h3>Contacto</h3>
         <p>Teléfono: 555-555-5555</p>
@@ -33,5 +69,8 @@
         </div>
     </footer>
     
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/contacto.js"></script>
+
 </body>
 </html>

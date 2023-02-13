@@ -19,7 +19,7 @@ const cardsHtml = (array) => {
                     ${element.descripcion}
                 </h3>
                 <br>
-                <h3>
+                <h3 class="h3-precios">
                     ${"Precio: $" + element.precio}
                 </h3>
                 <br>
@@ -57,6 +57,20 @@ const anadirAlCarrito = () => {
             })
             pushAlArray(carrito, buscarProducto)
             aLocalStorage("carrito", carrito)
+            Toastify({
+                text: "Producto en carrito",
+                duration: 1000,
+                destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                background: "linear-gradient(to right, #f26661, #cc1d61)",
+                },
+                onClick: function(){} // Callback after click
+            }).showToast();
         }
     })
 }
