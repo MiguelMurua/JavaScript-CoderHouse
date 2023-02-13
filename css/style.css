@@ -25,6 +25,8 @@ font-family: 'Bebas Neue', cursive;
 }
 
 .navBar h1 {
+    text-align: center;
+    padding-top: 20px;
     color: #fff;
     top: 30px;
     left: 50px;
@@ -34,7 +36,6 @@ font-family: 'Bebas Neue', cursive;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 20px;
     margin-right: 2.5em;
 }
 
@@ -73,6 +74,7 @@ font-family: 'Bebas Neue', cursive;
 }
 
 main {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
