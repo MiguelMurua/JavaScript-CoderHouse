@@ -288,6 +288,7 @@ form button {
 }
 
 .form-registro{
+    width: 600px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -302,9 +303,9 @@ form button {
 
 .form-registro
 input[type="text"],
-input[type="email"],
+input[type="email"]
 .input-pass{
-    width: 100%;
+    width: 35em;
     padding: 10px;
     margin: 5px 0px;
     box-sizing: border-box;
@@ -381,6 +382,7 @@ input[type="email"],
     max-width: 560px;
     min-width: 560px;
     min-height: 100px;
+    max-height: 200px;
     font-size: 1.2rem;
 }
 
