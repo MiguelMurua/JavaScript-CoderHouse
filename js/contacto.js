@@ -43,5 +43,3 @@ direccion.addEventListener ("blur", validarCampoVacio)
 mensaje.addEventListener ("blur", validarCampoVacio)
 
 email.addEventListener("input", validarEmail)
-
-
