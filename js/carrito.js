@@ -13,8 +13,8 @@ const cardsCarrito = (array) => {
     const arrayReducido = array.reduce((acc, element) => {
             return acc +
                 `
-            <div class="cards" id=${element.id}>
-                <div class="card-img">
+            <div class="cards-carrito" id=${element.id}>
+                <div class="card-img-carrito">
                     <img src=${element.img} alt=${element.producto}>
                 </div>
                 <h2 class="nombreProducto">

@@ -67,7 +67,7 @@ const anadirAlCarrito = () => {
                 position: "right", // `left`, `center` or `right`
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
-                background: "linear-gradient(to right, #f26661, #cc1d61)",
+                background: "linear-gradient(to right, #7DC66B, #AACF61 )",
                 },
                 onClick: function(){} // Callback after click
             }).showToast();
