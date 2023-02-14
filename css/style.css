@@ -396,12 +396,16 @@ input[type="email"],
 
 
 .contain-carrito{
-    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 100vh;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     border: solid .5px black;
+    overflow: hidden;
 
 }
 
